@@ -1,0 +1,22 @@
+<div class='detail' ms-visible='!isShowLoading'>
+  <header>
+    <ul>
+      <li class='yo-ico' action-type='go.back'>&#xe745;</li>
+      <li>
+        <ul>
+          <li>{{title}}</li>
+        </ul>
+      </li>
+      <li class='yo-ico'>&#xe684;</li>
+    </ul>
+  </header>
+  <section>
+    <dl>
+      <dt><img ms-src="src"></dt>
+      <dd>{{description}}</dd>
+    </dl> 
+  </section>
+</div>
+<div class="yo-loading" ms-visible='isShowLoading'>
+    <div class="inner"><i class="yo-ico"></i></div>
+</div>

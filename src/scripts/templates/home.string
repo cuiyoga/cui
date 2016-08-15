@@ -1,0 +1,81 @@
+<div class='m-home'>
+	<header>
+		<ul>
+			<li class='yo-ico'>&#xe745;</li>
+			<li>
+				<ul id='h_nav'>
+					<li class='active' action-type='tap.tabs'>关注</li>
+					<li action-type='tap.tabs'>热点</li>
+				</ul>
+			</li>
+			<li class='yo-ico'>&#xe684;</li>
+		</ul>
+	</header>
+	<div class="swiper-container" id='swiper-home'>
+		<div class="swiper-wrapper" id='swiper-hot'>
+		    <div class="swiper-slide" id='pos'>
+		    	<nav>
+					<ul id='m-nav'>
+						<li class='active' action-type='tap.slide'>足球现场</li>
+						<li action-type='tap.slide'>足球生活</li>
+						<li action-type='tap.slide'>足球美女</li>
+					</ul>
+				</nav>
+				<section>
+					<div class="swiper-container" id='swiper-slide'>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="scroller" spa-widget='scroll' data-scroll-id='homeListScroll'>
+									<div>
+										<div class="head">
+                        <img src="/footballApp/img/arrow.png"/>
+                        <span>下拉刷新...</span>
+                    </div>
+					<!-- ms-repeat-value用来遍历ul value可以随便起名字anglar.js用ng-repeat-->
+					<ul ms-repeat-value='livelist'>
+						<li action-type='goto.detail' ms-attr-data-id='value[0].id'>
+							<!-- ms-src用来设置路径 -->
+							<img ms-src='value[0].img'>
+							<!-- ms-text用来设置文本 -->
+							<b ms-text='value[0].title'></b>
+						</li>
+						<li></li>
+						<!-- ms-class-类名，值为true时添加类名 -->
+						<li ms-class-hide='!value[1]' action-type='goto.detail' ms-attr-data-id='value[1].id'>
+							<img ms-src='value[1].img'>
+							<b  ms-text='value[1].title'></b>
+						</li>
+					</ul>
+					<div class="foot">
+                      <img src="/footballApp/img/arrow.png"/>
+                      <span>上拉加载更多...</span>
+                  	</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-slide live-slide">
+			<div class="swiper-live" spa-widget='scroll'>
+				<ul>
+					<li>足球生活1</li>
+					<li>足球生活2</li>
+					<li>足球生活3</li>
+					<li>足球生活4</li>
+					<li>足球生活5</li>
+				</ul>
+			</div>
+		</div>
+		<div class="swiper-slide">333333</div>		
+		</div>
+					</div>
+				</section>
+		    </div>
+		    <div class="swiper-slide" id='last_slide'>
+		    	<ul>
+		    		<li class='anit'></li>
+		    		<li>加载中...</li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+	
+</div>

@@ -1,0 +1,19 @@
+<div class="yo-dialog yo-dialog-changeW"> 
+	<header class="hd"> 
+		<h2 class="title">登陆</h2> 
+	</header> 
+	<div class="bd"> 
+		<ul>
+			<li>
+				<span>用户名</span><input type="text">
+			</li>
+			<li>
+				<span>密&nbsp&nbsp码</span><input type="text">
+			</li>
+		</ul>
+	</div>
+	<footer class="ft"> 
+		<button class="yo-btn yo-btn-dialog yo-btn-l" action-type='go.register'>点击注册</button> 
+		<button class="yo-btn yo-btn-dialog yo-btn-l" action-type='dialog.close'>确定</button> 
+	</footer>
+</div>

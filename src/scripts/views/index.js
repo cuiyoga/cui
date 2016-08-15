@@ -1,0 +1,29 @@
+var indexTpl=require('../templates/index.string');
+SPA.defineView("index",{
+	html:indexTpl,//设置页面中的内容
+	plugins:["delegated"],//引入插件，用于给DOM绑定动作
+	modules:[{//定义视图模板
+		name:'content',//定义模板名字
+		defaultTag:'home',//定义添加默认的子视图模块
+		views:['home','search','mine'],//定义所有的子视图
+		container:'.m-index'//子视图添加到主视图的那个容器里
+	}],
+	bindActions:{//给DOM事件绑定动作(需要给DOM元素添加action-type的属性)
+		"switch.tabs":function(e,data){
+			//添加高亮
+			$(e.el).addClass('active').siblings().removeClass('active');
+			//设置跳转的模板块
+			this.modules.content.launch(data.tag);
+		},
+		"goto.login":function(){
+			console.log(0)
+				SPA.show('login',{
+					ani:{
+						name:'dialog',
+						width:280,
+						height:200
+					}
+				})
+		}
+	}
+})

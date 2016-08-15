@@ -1,0 +1,32 @@
+
+.yo-dialog{
+	.title{
+		color:#0CC140;
+		line-height:.44rem;
+		margin:.1rem 0;
+	}
+	.bd{
+		li{
+			padding:.1rem 0;
+			input{
+				border:none;
+				outline:none;
+				border-bottom: 1px solid #0CC140
+			}
+			span{
+				display:inline-block;
+				width:.48rem;
+				margin-right:.1rem;
+			}
+		}
+		
+	}
+}
+@include yo-dialog(
+	$name:changeW,
+	$height:1.8rem
+){
+	.ft button:first-child{
+		//color:#ccc;
+	}
+}

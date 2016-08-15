@@ -1,0 +1,231 @@
+.m-container{
+	.m-index{
+		.m-home{
+	    	@include flexbox();
+	    	@include flex(1);
+	    	@include flex-direction(column);
+	    	width:100%;
+	    	height:100%;
+	    	#swiper-home{
+	    		@include flex(1);
+	    		width:100%;
+	    		position:relative;
+	    		#swiper-hot{
+	    			position:absolute;
+	    			@include flex(1);
+	    			width:100%;
+	    			height:100%;
+	    			
+	    			
+	    		}
+	    	}
+	    }
+	    #last_slide{
+	    	position:relative;
+	    	ul{
+	    		position:absolute;
+	    		width:1rem;
+	    		bottom:20%;
+	    		left:50%;
+	    		margin-left:-.5rem;
+	    		text-align:center;
+	    		li{
+	    			&.anit{
+	    				width:.1rem;
+	    				height:.25rem;
+	    				margin:0 auto;
+	    				@include border(1px,#000,solid);
+	    				animation:anit .7s linear infinite;
+	    			}
+	    		}
+	    	}
+	    }
+	    @keyframes anit{
+	    	0%{
+	    		-webkit-transform:rotate3d(0,0,1,0)
+	    	}
+	    	50%{
+	    		-webkit-transform:rotate3d(0,0,1,180deg)
+	    	}
+	    	100%{
+	    		-webkit-transform:rotate3d(0,0,1,360deg)
+	    	}
+	    }
+		header{
+			height:.44rem;
+			width:100%;
+			background:#0CC140;
+			color:#fff;
+			>ul{
+				@include flexbox();
+				width:100%;
+				height:100%;
+				>li{
+					width:.44rem;
+					text-align: center;
+					font-size: .2rem;
+					line-height:.44rem;
+					&:nth-child(2){
+						@include flexbox();
+						@include flex(1);
+						@include justify-content(center);
+						ul{
+							@include flexbox();
+							font-size: .12rem;
+							width: 1.18rem;
+							height:.25rem;
+							line-height: .25rem;
+							text-align:center;
+							background:rgba(100,217,133,.7);
+							@include border-radius(.15rem);
+							overflow: hidden;
+							margin:.085rem 0;
+							li{
+								@include flex(1)
+								height:.25rem;
+								&.active{
+									background:rgba(100,217,133,1);
+								}
+							}
+						}	
+					}
+				}
+			}
+		}
+		nav{
+			width:100%;
+			height:.35rem;
+			ul{
+				@include flexbox();
+				width:100%;
+				height:100%;
+				@include box-sizing(border-box);
+				li{
+					@include flex(1);
+					text-align: center;
+					line-height:.35rem;
+					@include border(0 0 1px 0,#ccc);
+					@include box-sizing(border-box);
+					&.active{
+						@include border(0 0 0 0,#0CC140);
+						border-bottom:2px solid #0CC140;
+					}
+				}
+			}
+		}
+		#pos{
+			@include flexbox();
+			@include flex-direction(column);
+		}
+		section{	
+			@include flexbox();
+			@include flex-direction(column);
+       		width:100%;
+       		height:100%;
+        	overflow:hidden;
+        	#swiper-slide{
+        		@include flex(1);
+        		width:100%;
+        		height:100%;
+        		position:relative;
+        		>.swiper-wrapper{
+        			position:absolute;
+        			.swiper-slide{
+        				@include flexbox();
+								@include flex-direction(column);
+			       		width:100%;
+			       		height:100%;
+        			}
+        		}
+        		.live-slide{
+	    				width:100%;
+	    				height:100%;
+	    				overflow:hidden;
+	    				.swiper-live{
+				 			ul{
+				 				@include flexbox();
+				 				width:200%;
+				 				height:100%;
+				 				padding:.05rem;
+				 				li{
+				 					text-align:center;
+				 					@include flex(1);
+				 					padding:.05rem .1rem;
+				 					@include border();
+				 				}
+				 			}
+				 		}
+	    			}
+        	}
+		 	.scroller{
+			 	width:100%;
+				ul{
+					@include flexbox();
+					width:100%;
+					li{
+						margin-top:.04rem;
+						&:not(:nth-child(2)){
+							width:49%;
+							@include border(1px,#ccc)
+						}
+						&:nth-child(2){
+							width:.05rem;
+						}
+						&.hide{
+							visibility:hidden;
+						}
+						img{
+							width:100%;
+						}
+						b{
+							display: block;
+							text-overflow:ellipsis;
+							white-space: nowrap;
+							overflow:hidden;
+							padding:.07rem .05rem;
+							@include border(1px 0 0 0,#ccc)
+						}
+					}
+				}
+				>div{
+					.head {
+              text-align: center;
+              height: .35rem;
+              line-height: .35rem;
+              img {
+                width: .13rem;
+                height: .13rem;
+                margin-bottom: 0.02rem;
+                display: inline-block;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                transition: transform 150ms;
+                -webkit-transition: transform 150ms;
+              }
+          }
+          .foot {
+              text-align: center;
+              height: .35rem;
+              line-height: .35rem;
+              img {
+                width: .13rem;
+                height: .13rem;
+                margin-bottom: 0.04rem;
+                display: inline-block;
+                transition: transform 150ms;
+                -webkit-transition: transform 150ms;
+              }
+          }
+          .up {
+              transform: rotate(360deg) !important;
+              -webkit-transform: rotate(360deg) !important;
+            }
+          .down {
+              transform: rotate(180deg) !important;
+              -webkit-transform: rotate(180deg) !important;
+          }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+<header>
+	<ul>
+		<li class='yo-ico'>&#xe745;</li>
+		<li>
+			<ul class='ul'>
+				<li>发现</li>
+			</ul>
+		</li>
+		<li></li>
+	</ul>
+</header>
+<nav class='nav'>
+	<input type="text" placeholder='请输入搜索内容'>
+	<div><p>搜索</p></div>
+</nav>
+<section id='wrapper' spa-widget='scroll'>
+	<div class="scroller scroller1" id='scroller'>
+		<ol>
+			<li><img src="/footballApp/img/Pikachu.jpg"></li>
+			<li>
+				<h3>朴智星</h3>
+				<p>朴智星韩国战中国，胜券在握</p>
+			</li>
+			<li><span>关注</span></li>
+		</ol>
+		<ol>
+			<li><img src="/footballApp/img/Pikachu.jpg"></li>
+			<li>
+				<h3>黄博文</h3>
+				<p>黄博文韩国战中国，胜券在握</p>
+			</li>
+			<li><span class='grey'>关注</span></li>
+		</ol>
+		<ol>
+			<li><img src="/footballApp/img/Pikachu.jpg"></li>
+			<li>
+				<h3>黄博文</h3>
+				<p>黄博文韩国战中国，胜券在握</p>
+			</li>
+			<li><span>关注</span></li>
+		</ol>
+		<ol>
+			<li><img src="/footballApp/img/Pikachu.jpg"></li>
+			<li>
+				<h3>黄博文</h3>
+				<p>黄博文韩国战中国，胜券在握</p>
+			</li>
+			<li><span class='grey'>关注</span></li>
+		</ol>
+	</div>
+</section>

@@ -1,0 +1,32 @@
+<div class='mine-container'>
+		<header class='head'>
+			<ul>
+				<li class='yo-ico' action-type='goto.menu'>&#xe745;</li>
+				<li>
+					<ul class='ul'>
+						<li>个人中心</li>
+					</ul>
+				</li>
+				<li></li>
+			</ul>
+		</header>
+		<div class='scroller scroller1'>
+			<ol>
+				<li><img src="/footballApp/img/Pikachu.jpg"></li>
+				<li>
+					<h3>我是小萌</h3>
+					<p>我是小萌，我怕谁？哈哈哈哈哈哈！</p>
+				</li>
+			</ol>
+		</div>
+		<nav>
+			<ul>
+				<li class='active'>图片（1）</li>
+				<li>关注（3）</li>
+				<li>粉丝（8）</li>
+			</ul>
+		</nav>
+		<section>
+			<img src="/footballApp/img/1.gif">
+		</section>
+</div>

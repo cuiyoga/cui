@@ -1,0 +1,73 @@
+header{
+	>ul .ul{
+		background:#0CC140!important;
+	}
+}
+.nav{
+	@include flexbox();
+	padding:.05rem;
+	background:#fff;
+	input{
+		@include flex(1);
+		@include border-radius(5px);
+		border:1px solid #ccc;
+		padding-left:.1rem
+	}
+	div{
+		width:.65rem;
+		padding-left:.05rem;
+	}
+	p{
+		width:.55rem;
+		height:.33rem;
+		line-height:.33rem;
+		background:#0CC140;
+		text-align:center;
+		color:#fff;
+		@include border-radius(5px);
+	}
+}
+.scroller1{
+	margin-top:.04rem;
+	ol{
+		@include flexbox();
+		width:100%;
+		background:#fff;
+		@include border(0 0 1px 0,#ccc)
+		li{
+			&:not(:nth-child(2)){
+				@include flexbox();
+			}
+			&:nth-child(1){
+				width:22.8%;
+				padding:.1rem 0 .1rem .2rem;
+			}
+			&:nth-child(2){
+				@include flex(1);
+				padding:.12rem 0;
+				p{
+					text-overflow:ellipsis;
+					white-space: nowrap;
+					overflow:hidden;
+				}
+			}
+			&:nth-child(3){
+				width:22.8%;
+				@include justify-content(center);
+				@include align-items(center);
+				span{
+					background:#0CC140;
+					width:.55rem;
+					height:.28rem;
+					line-height:.28rem;
+					@include border-radius(5px);
+					color:#fff;
+					text-align:center;
+					&.grey{
+						background:#ccc;
+					}
+				}
+			}
+		}
+	}
+}
