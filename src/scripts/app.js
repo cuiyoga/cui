@@ -18,5 +18,5 @@ require('./views/menu');
 
 //设置默认显示试图
 SPA.config({
-	indexView:"index"
+	indexView:"mine"
 })
