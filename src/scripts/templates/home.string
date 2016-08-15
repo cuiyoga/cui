@@ -16,9 +16,9 @@
 		    <div class="swiper-slide" id='pos'>
 		    	<nav>
 					<ul id='m-nav'>
-						<li class='active' action-type='tap.slide'>足球现场</li>
-						<li action-type='tap.slide'>足球生活</li>
-						<li action-type='tap.slide'>足球美女</li>
+						<li class='active' action-type='tap.slide'>现场111</li>
+						<li action-type='tap.slide'>生活</li>
+						<li action-type='tap.slide'>美女</li>
 					</ul>
 				</nav>
 				<section>
