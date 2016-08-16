@@ -18,6 +18,5 @@ require('./views/menu');
 
 //设置默认显示试图
 SPA.config({
-	indexView:"index"
+	indexView:"indexwerwer"
 })
-console.log('0815 is changin`1111111111111111111111111')
