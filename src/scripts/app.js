@@ -20,3 +20,4 @@ require('./views/menu');
 SPA.config({
 	indexView:"index"
 })
+console.log('0815')
