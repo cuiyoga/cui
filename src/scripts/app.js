@@ -20,3 +20,4 @@ require('./views/menu');
 SPA.config({
 	indexView:"index00000815"
 })
+console.log('yoga')
