@@ -18,10 +18,5 @@ require('./views/menu');
 
 //设置默认显示试图
 SPA.config({
-	indexView:"mine"
+	indexView:"mine123123"
 })
-<<<<<<< HEAD
-console.log('master')
-=======
-console.log('0815 is changing')
->>>>>>> 0815
