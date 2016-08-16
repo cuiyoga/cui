@@ -18,6 +18,11 @@ require('./views/menu');
 
 //设置默认显示试图
 SPA.config({
+<<<<<<< HEAD
 	indexView:"mine"
 })
 console.log('yoga is smarty')
+=======
+	indexView:"guide"
+})
+>>>>>>> 0815
