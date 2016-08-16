@@ -20,4 +20,4 @@ require('./views/menu');
 SPA.config({
 	indexView:"mine"
 })
-console.log('yoga is smarty')
+console.log('yoga')
