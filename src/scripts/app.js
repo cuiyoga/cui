@@ -20,4 +20,8 @@ require('./views/menu');
 SPA.config({
 	indexView:"mine"
 })
+<<<<<<< HEAD
 console.log('master')
+=======
+console.log('0815 is changing')
+>>>>>>> 0815
